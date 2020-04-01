@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:get_it/get_it.dart';
 import 'package:invoice_scanner_app/app.dart';
+import 'package:invoice_scanner_app/store.dart';
 
+final getIt = GetIt.instance;
 String appTitle = 'Invoice Scanner';
 
 class Root extends StatelessWidget {
@@ -16,4 +19,11 @@ class Root extends StatelessWidget {
   }
 }
 
-void main() => runApp(Root());
+void setup() {
+  GetIt.I.registerSingleton<Store>(Store());
+}
+
+void main() {
+  setup();
+  runApp(Root());
+}
