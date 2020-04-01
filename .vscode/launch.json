@@ -8,13 +8,13 @@
       "name": "Android",
       "request": "launch",
       "type": "dart",
-      "deviceId": "42E7A0EA-410A-4FFD-96D0-B1BF700859B7"
+      "deviceId": "324b53414e553398"
     },
     {
       "name": "iPhone simulator",
       "request": "launch",
       "type": "dart",
-      "deviceId": "324b53414e553398"
+      "deviceId": "660f6dd439c3ce244fae18267904a14129fb1b7a"
     }
   ],
   "compounds": [
